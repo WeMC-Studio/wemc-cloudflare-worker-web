@@ -1,16 +1,37 @@
+#instantclick-bar {
+    background: #FF8700
+}
+
+hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+a {
+    color: #cbb283;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    color: #786344;
+    text-decoration: underline;
+}
+
 .pageid {
     margin-bottom: -26px
 }
 
 code {
-    color: #484848;
-    background-color: #f5f5f5;
+    color: #f4cf5c;
+    background-color: rgba(0, 0, 0, 0.655);
     border-radius: 0px;
-    border: 1px solid #dadada;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 pre>code {
-    color: unset;
+    color: #FFF;
     background-color: unset;
     border-radius: unset;
     border: 0px;
@@ -19,6 +40,10 @@ pre>code {
 .post-a {
     color: #FFF;
     text-decoration: none ! important;
+}
+
+.post-a:hover {
+    color: #cbb283;
 }
 
 .post-box {
@@ -31,7 +56,7 @@ pre>code {
 
 .post-box:hover {
     transition-duration: 0.3s;
-    border-left: 5px solid rgba(66, 66, 66, 0.15);
+    border-left: 5px solid #a78b56;
 }
 
 .thread h2 {
@@ -67,27 +92,38 @@ h2 a {
 }
 
 body {
-    background: url(https://github.cdn.wemc.top/img/dynamic-wemc-bg.jpg);
+    background: url(https://i.zerodream.net/77d1991ce08adcd4fc2c7a2bb0dac198.jpg);
     font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' ! important;
     font-weight: 400;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     color: #FFF;
     text-shadow: 0px 0px 8px #000;
 }
 
-h2 a {
-    color: #000;
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background-image: url(https://github.cdn.wemc.top/img/dynamic-wemc-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 h2 a:hover {
-    color: #000;
     text-decoration: none;
-}
-
-.full-width {
     width: 100%;
 }
 
@@ -106,28 +142,29 @@ h2 a:hover {
 }
 
 .thread table tr {
-    background-color: #fff;
-    border-top: 1px solid #c6cbd1;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .thread table tr:nth-child(2n) {
-    background-color: #f7f7f7;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .thread table th,
 .thread table td {
     padding: 10px 12px 0px 12px;
-    border: 1px solid #dfe2e5;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     font-size: 14px;
 }
 
 .thread table th {
     padding-bottom: 10px;
-    background: #f7f7f7;
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .thread pre {
     margin-bottom: 16px;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.7);
 }
 
 pre {
@@ -136,15 +173,33 @@ pre {
 
 blockquote {
     font-size: 15px ! important;
+    border-color: #a78b56;
 }
 
-a:hover {
-    color: #cbb283;
-    text-decoration: none;
+.comments-body .comment-input {
+    background: none;
+    border-color: rgba(255, 255, 255, 0.3) ! important;
+    color: #FFF ! important;
 }
 
-a {
-    text-decoration: none;
+.comments-body .comment-input:focus {
+    border-color: #d0a85c ! important;
+    outline: 0 ! important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #d0a85c ! important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #d0a85c ! important;
+}
+
+.btn-golden,
+#submitdata {
+    color: #fff;
+    background-color: #d0a85c;
+    border-color: #d0a24b;
+}
+
+.btn-golden:hover,
+#submitdata:hover {
+    background: #b78c3a;
+    border-color: #c39641;
 }
 
 @media screen and(max-width:768px) {
