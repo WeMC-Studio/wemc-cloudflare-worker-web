@@ -11,7 +11,7 @@ var site_favicon = "https://www.wemc.top/favicon.ico"; // 站点 Logo
 
 // 博主信息
 var owner_name = "WeMC Studio"; // 博主名字
-var owner_logo = "https://secure.gravatar.com/avatar/80962ca1ced98d0e679b2bc315d049f2?s=256" // 博主头像
+var owner_logo = "https://github.cdn.wemc.top/img/logo.jpg" // 博主头像
 var owner_desc = "WeMC Network开发团队"; // 博主简介
 
 // 设置站点资源文件地址
