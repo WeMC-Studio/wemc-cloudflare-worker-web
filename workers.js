@@ -289,7 +289,7 @@ async function bloghandle(request) {
     data += `</div>
 				<div class="col-sm-3">
 					<div style="padding: 16px;text-align: center;">
-						<img src="${owner_logo}" style="max-width: 220px;width: 100%;border-radius: 50%;">
+						<img src="${owner_logo}" style="max-width: 220px;width: 100%;border-radius: 10%;">
 						<h3>${owner_name}</h3>
 						<p class="text-left">${owner_desc}</p>
 						<hr>
