@@ -138,8 +138,12 @@ blockquote {
     font-size: 15px ! important;
 }
 
-a {
+a:hover {
     color: #cbb283;
+    text-decoration: none;
+}
+
+a {
     text-decoration: none;
 }
 
